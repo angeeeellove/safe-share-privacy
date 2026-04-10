@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - SecureCard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #1e293b;
+            background: #f8fafc;
+        }
+        .lang-switcher {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 0.75rem 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            z-index: 100;
+        }
+        .lang-btn {
+            padding: 0.5rem 1rem;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            font-size: 0.75rem;
+            color: #64748b;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .lang-btn:hover {
+            background: #f1f5f9;
+        }
+        .lang-btn.active {
+            background: #6366f1;
+            border-color: #6366f1;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 5rem 1rem 2rem;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4f46e5;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+        .content {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #334155;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        h2:first-child {
+            margin-top: 0;
+        }
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #475569;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #475569;
+        }
+        ul, ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            color: #475569;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .warning {
+            background: #fef2f2;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #ef4444;
+        }
+        .warning p {
+            margin: 0;
+            color: #991b1b;
+        }
+        .info {
+            background: #eff6ff;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #3b82f6;
+        }
+        .info p {
+            margin: 0;
+            color: #1e40af;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.875rem;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn" data-lang="en" onclick="switchLanguage('en')">English</button>
+        <button class="lang-btn" data-lang="zh" onclick="switchLanguage('zh')">中文</button>
+    </div>
+
+    <!-- English Content -->
+    <div id="content-en" class="container">
+        <div class="header">
+            <h1>Terms of Service</h1>
+            <p>Last Updated: January 2026</p>
+        </div>
+
+        <div class="content">
+            <h2>1. Acceptance of Terms</h2>
+            <p>By accessing or using SecureCard ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use our Service.</p>
+
+            <h2>2. Description of Service</h2>
+            <p>SecureCard is a secure, ephemeral content sharing service that allows you to:</p>
+            <ul>
+                <li>Create encrypted cards containing sensitive information</li>
+                <li>Share cards via unique links</li>
+                <li>Set expiration times for cards</li>
+                <li>Optional: Add password protection for additional security</li>
+            </ul>
+            <div class="warning">
+                <p><strong>Important:</strong> Cards are automatically and permanently deleted after being viewed once. This is a core feature of the service and cannot be undone.</p>
+            </div>
+
+            <h2>3. Age Requirement</h2>
+            <p>You must be at least 13 years old to use SecureCard. By using our Service, you represent and warrant that you are at least 13 years old.</p>
+
+            <h2>4. User Responsibilities</h2>
+            <p>As a user of SecureCard, you agree to:</p>
+            <ul>
+                <li>Provide accurate and complete information</li>
+                <li>Maintain the security of your account</li>
+                <li>Accept responsibility for all activities under your account</li>
+                <li>Not share accounts with others</li>
+                <li>Comply with all applicable laws and regulations</li>
+            </ul>
+
+            <h2>5. Prohibited Uses</h2>
+            <p>You may NOT use SecureCard to:</p>
+            <ul>
+                <li>Share illegal, harmful, or abusive content</li>
+                <li>Violate intellectual property rights of others</li>
+                <li>Distribute malware, viruses, or harmful code</li>
+                <li>Engage in harassment, spam, or unsolicited communications</li>
+                <li>Impersonate others or misrepresent your identity</li>
+                <li>Interfere with or disrupt the Service</li>
+                <li>Attempt to access other users' accounts or data</li>
+            </ul>
+
+            <h2>6. Content and Data</h2>
+            <h3>6.1 Your Content</h3>
+            <p>You retain ownership of content you create on SecureCard. However, you grant us a license to store, process, and transmit your content solely for the purpose of providing the Service.</p>
+
+            <h3>6.2 Content Deletion</h3>
+            <div class="info">
+                <p><strong>Zero-Knowledge Policy:</strong> Content is encrypted on your device. We cannot access, retrieve, or restore deleted cards. Once a card is viewed or expires, it is permanently gone.</p>
+            </div>
+
+            <h2>7. Paid Subscriptions</h2>
+            <h3>7.1 Pro Features</h3>
+            <p>SecureCard offers a Pro subscription with additional features:</p>
+            <ul>
+                <li>Unlimited card creation</li>
+                <li>Access to all card themes</li>
+                <li>Password protection for cards</li>
+            </ul>
+
+            <h2>8. Termination</h2>
+            <p>We reserve the right to suspend or terminate your account if you violate these Terms or engage in fraudulent or illegal activities.</p>
+
+            <h2>9. Contact Us</h2>
+            <p>For questions about these Terms, please contact:</p>
+            <ul>
+                <li>Email: legal@securecard.app</li>
+                <li>Website: https://securecard.app</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 SecureCard. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Chinese Content -->
+    <div id="content-zh" class="container hidden">
+        <div class="header">
+            <h1>服务条款</h1>
+            <p>最后更新：2026年1月</p>
+        </div>
+
+        <div class="content">
+            <h2>1. 接受条款</h2>
+            <p>访问或使用 SecureCard（"服务"）即表示您同意受这些服务条款（"条款"）的约束。如果您不同意这些条款，请不要使用我们的服务。</p>
+
+            <h2>2. 服务描述</h2>
+            <p>SecureCard 是一项安全的、临时的内容分享服务，允许您：</p>
+            <ul>
+                <li>创建包含敏感信息的加密卡片</li>
+                <li>通过唯一链接分享卡片</li>
+                <li>为卡片设置过期时间</li>
+                <li>可选：添加密码保护以增强安全性</li>
+            </ul>
+            <div class="warning">
+                <p><strong>重要提示：</strong>卡片在被查看一次后会自动且永久删除。这是服务的核心功能，无法撤销。</p>
+            </div>
+
+            <h2>3. 年龄要求</h2>
+            <p>您必须年满13岁才能使用 SecureCard。使用我们的服务即表示您声明并保证您至少13岁。</p>
+
+            <h2>4. 用户责任</h2>
+            <p>作为 SecureCard 的用户，您同意：</p>
+            <ul>
+                <li>提供准确和完整的信息</li>
+                <li>维护您账户的安全性</li>
+                <li>对您账户下的所有活动承担责任</li>
+                <li>不与他人共享账户</li>
+                <li>遵守所有适用的法律法规</li>
+            </ul>
+
+            <h2>5. 禁止使用的用途</h2>
+            <p>您不得使用 SecureCard 来：</p>
+            <ul>
+                <li>分享非法、有害或虐待性内容</li>
+                <li>侵犯他人的知识产权</li>
+                <li>分发恶意软件、病毒或有害代码</li>
+                <li>进行骚扰、垃圾邮件或未经授权的通信</li>
+                <li>冒充他人或歪曲您的身份</li>
+                <li>干扰或破坏服务</li>
+                <li>试图访问其他用户的账户或数据</li>
+            </ul>
+
+            <h2>6. 内容和数据</h2>
+            <h3>6.1 您的内容</h3>
+            <p>您保留在 SecureCard 上创建的内容的所有权。但是，您授予我们许可，仅为了提供服务的目的存储、处理和传输您的内容。</p>
+
+            <h3>6.2 内容删除</h3>
+            <div class="info">
+                <p><strong>零知识政策：</strong>内容在您的设备上加密。我们无法访问、检索或恢复已删除的卡片。一旦卡片被查看或过期，它就永久消失了。</p>
+            </div>
+
+            <h2>7. 付费订阅</h2>
+            <h3>7.1 Pro 功能</h3>
+            <p>SecureCard 提供 Pro 订阅，具有额外功能：</p>
+            <ul>
+                <li>无限卡片创建</li>
+                <li>访问所有卡片主题</li>
+                <li>卡片的密码保护</li>
+            </ul>
+
+            <h2>8. 终止</h2>
+            <p>如果您违反这些条款或从事欺诈或非法活动，我们保留暂停或终止您账户的权利。</p>
+
+            <h2>9. 联系我们</h2>
+            <p>如对这些条款有疑问，请联系：</p>
+            <ul>
+                <li>电子邮件：legal@securecard.app</li>
+                <li>网站：https://securecard.app</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 SecureCard. 保留所有权利。</p>
+        </div>
+    </div>
+
+    <script>
+        // Auto-detect user's language and switch
+        function detectLanguage() {
+            const userLang = navigator.language || navigator.userLanguage;
+            // Simplify language code (e.g., 'zh-CN' -> 'zh')
+            return userLang.split('-')[0];
+        }
+
+        function switchLanguage(lang) {
+            // Hide all content
+            document.getElementById('content-en').classList.add('hidden');
+            document.getElementById('content-zh').classList.add('hidden');
+
+            // Show selected content
+            document.getElementById('content-' + lang).classList.remove('hidden');
+
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.lang === lang) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Save preference
+            localStorage.setItem('preferred-lang', lang);
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check for saved preference or detect language
+            const savedLang = localStorage.getItem('preferred-lang');
+            const detectedLang = detectLanguage();
+
+            // Default to detected language or 'en'
+            const initialLang = (savedLang && (savedLang === 'en' || savedLang === 'zh'))
+                ? savedLang
+                : (detectedLang === 'zh' ? 'zh' : 'en');
+
+            switchLanguage(initialLang);
+        });
+    </script>
+</body>
+</html>
