@@ -114,6 +114,17 @@
             margin: 0;
             color: #92400e;
         }
+        .feature {
+            background: #f0fdf4;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #22c55e;
+        }
+        .feature p {
+            margin: 0;
+            color: #166534;
+        }
         .footer {
             text-align: center;
             margin-top: 3rem;
@@ -142,80 +153,95 @@
         </div>
 
         <div class="content">
+            <div class="feature">
+                <p><strong>SafeShare Core Principle:</strong> No registration required. No email needed. No account to manage. Your data stays private.</p>
+            </div>
+
             <h2>1. Introduction</h2>
-            <p>Welcome to SafeShare ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+            <p>Welcome to SafeShare. This Privacy Policy explains how the application handles information when you use our service. SafeShare is designed with privacy-first principles: minimal data collection, zero-knowledge encryption, and no tracking.</p>
 
-            <h2>2. Information We Collect</h2>
-            <h3>2.1 Information You Provide</h3>
-            <ul>
-                <li><strong>Account Information:</strong> When you create an account, we collect your email address and payment information (for Pro subscribers)</li>
-                <li><strong>User Content:</strong> The content you encrypt and share via SafeShare cards</li>
-                <li><strong>Preferences:</strong> Language, theme choices, and app settings</li>
-            </ul>
-
-            <h3>2.2 Information Automatically Collected</h3>
-            <ul>
-                <li><strong>Usage Data:</strong> Features used, cards created, app performance metrics</li>
-                <li><strong>Device Information:</strong> Device type, operating system, unique device identifiers</li>
-                <li><strong>Location Data:</strong> Approximate location based on IP address (for security purposes only)</li>
-            </ul>
-
-            <h2>3. How We Use Your Information</h2>
-            <p>We use the collected information for:</p>
-            <ul>
-                <li>Providing and maintaining the SafeShare service</li>
-                <li>Processing transactions and sending related information</li>
-                <li>Sending technical notices and support messages</li>
-                <li>Responding to comments, questions, and customer service requests</li>
-                <li>Monitoring and analyzing trends, usage, and activities</li>
-                <li>Detecting, preventing, and addressing technical issues and fraudulent activity</li>
-            </ul>
-
-            <h2>4. Data Storage and Security</h2>
+            <h2>2. No Registration Required</h2>
             <div class="highlight">
-                <p><strong>Zero-Knowledge Architecture:</strong> SafeShare uses end-to-end encryption. Your card content is encrypted locally on your device BEFORE being uploaded to our servers. We cannot access, read, or decrypt your shared content.</p>
+                <p><strong>Important:</strong> SafeShare does NOT require you to create an account, provide an email address, or register in any way. You can start using the app immediately without sharing any personal information.</p>
+            </div>
+
+            <h2>3. Information We Collect</h2>
+            <h3>3.1 Information You Provide</h3>
+            <ul>
+                <li><strong>Card Content:</strong> The content you encrypt and share via SafeShare cards (encrypted locally before upload)</li>
+                <li><strong>App Preferences:</strong> Your chosen language and card theme (stored locally on your device only)</li>
+            </ul>
+
+            <h3>3.2 Information Automatically Collected</h3>
+            <ul>
+                <li><strong>Card Creation Count:</strong> Number of cards created (stored locally, used for free tier limit)</li>
+            </ul>
+
+            <div class="feature">
+                <p><strong>What We DON'T Collect:</strong></p>
+                <ul>
+                    <li>No email addresses</li>
+                    <li>No phone numbers</li>
+                    <li>No user accounts or identities</li>
+                    <li>No device identifiers or tracking</li>
+                    <li>No location data</li>
+                    <li>No usage analytics or behavioral tracking</li>
+                </ul>
+            </div>
+
+            <h2>4. How We Use Information</h2>
+            <p>Information collected is used solely for:</p>
+            <ul>
+                <li>Providing core SafeShare functionality (creating and sharing encrypted cards)</li>
+                <li>Enforcing free tier limits (cards created per month)</li>
+                <li>Remembering your app preferences (language, theme)</li>
+            </ul>
+            <p><strong>We do NOT use your information for advertising, analytics, or any other purpose beyond app functionality.</strong></p>
+
+            <h2>5. Data Storage and Security</h2>
+            <div class="highlight">
+                <p><strong>Zero-Knowledge Architecture:</strong> Your card content is encrypted locally on your device using AES-256-GCM BEFORE being uploaded to our servers. The encryption key is never sent to our servers. We cannot access, read, or decrypt your shared content.</p>
             </div>
             <p>Additional security measures:</p>
             <ul>
-                <li>All data is encrypted in transit using TLS 1.3</li>
-                <li>Cards are automatically deleted after being viewed</li>
-                <li>We retain minimal metadata necessary for service operation</li>
-                <li>Payment information is processed by third-party providers (Apple/Google) and is never stored on our servers</li>
+                <li>All data is encrypted in transit using HTTPS/TLS</li>
+                <li>Cards are automatically and permanently deleted after being viewed once</li>
+                <li>Expired cards are deleted after 24 hours</li>
+                <li>We retain only minimal metadata necessary for card delivery</li>
+                <li>No personal information is stored on our servers</li>
             </ul>
 
-            <h2>5. Data Retention</h2>
+            <h2>6. Data Retention</h2>
             <ul>
-                <li><strong>Active Cards:</strong> Retained until viewed by recipient (auto-deleted)</li>
-                <li><strong>Expired Cards:</strong> Deleted 24 hours after expiration</li>
-                <li><strong>Account Data:</strong> Retained while your account is active</li>
-                <li><strong>Usage Logs:</strong> Anonymized and deleted after 90 days</li>
+                <li><strong>Active Cards:</strong> Retained on server until viewed by recipient (auto-deleted)</li>
+                <li><strong>Expired Cards:</strong> Deleted 24 hours after expiration time</li>
+                <li><strong>Local Preferences:</strong> Stored on your device until you change them or uninstall the app</li>
+                <li><strong>Card History:</strong> Stored locally on your device only</li>
             </ul>
 
-            <h2>6. Data Sharing and Disclosure</h2>
-            <p>We do NOT sell your personal data. We may share your information only in the following circumstances:</p>
+            <h2>7. Data Sharing and Disclosure</h2>
+            <p><strong>We do NOT sell, rent, or share your personal data.</strong> We do not have personal data to share.</p>
+            <p>We may share non-personal metadata only in the following circumstances:</p>
             <ul>
-                <li><strong>Service Providers:</strong> With trusted third parties who assist in operating our service</li>
+                <li><strong>Service Providers:</strong> With hosting infrastructure providers (e.g., Cloudflare) solely for operating the service</li>
                 <li><strong>Legal Requirements:</strong> When required by law, court order, or government regulation</li>
-                <li><strong>Business Transfers:</strong> In connection with a merger, sale, or asset transfer</li>
-                <li><strong>Protection:</strong> To protect our rights, privacy, safety, or property</li>
             </ul>
 
-            <h2>7. Your Privacy Rights</h2>
-            <p>Depending on your location, you may have the following rights:</p>
+            <h2>8. Your Privacy Rights</h2>
+            <p>Because SafeShare does not collect personal information and requires no registration:</p>
             <ul>
-                <li><strong>Access:</strong> Request a copy of your personal data</li>
-                <li><strong>Correction:</strong> Request correction of inaccurate data</li>
-                <li><strong>Deletion:</strong> Request deletion of your personal data</li>
-                <li><strong>Objection:</strong> Object to processing of your personal data</li>
-                <li><strong>Restriction:</strong> Request restriction of processing your personal data</li>
-                <li><strong>Data Portability:</strong> Request transfer of your data to another service</li>
+                <li><strong>No Account to Delete:</strong> Since there are no user accounts, there is nothing to delete from our servers</li>
+                <li><strong>No Data to Export:</strong> Your data is already on your device (app preferences and card history)</li>
+                <li><strong>Local Control:</strong> You can clear your local data at any time through the app settings</li>
             </ul>
-            <p>To exercise these rights, contact us at: privacy@safeshare.app</p>
 
-            <h2>8. Children's Privacy</h2>
-            <p>SafeShare is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
+            <h2>9. Children's Privacy</h2>
+            <p>SafeShare is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. Parents or guardians should supervise minors' use of the app.</p>
 
-            <h2>9. Contact Us</h2>
+            <h2>10. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. Your continued use of the app after changes indicates acceptance of the updated policy.</p>
+
+            <h2>11. Contact Us</h2>
             <p>If you have questions about this Privacy Policy, please contact:</p>
             <ul>
                 <li>Email: privacy@safeshare.app</li>
@@ -236,80 +262,95 @@
         </div>
 
         <div class="content">
+            <div class="feature">
+                <p><strong>SafeShare 核心原则：</strong>无需注册。无需邮箱。无需管理账户。您的数据保持私密。</p>
+            </div>
+
             <h2>1. 引言</h2>
-            <p>欢迎使用 SafeShare（"我们"、"我们的"）。我们致力于保护您的个人信息和您的隐私权。本隐私政策说明了当您使用我们的移动应用程序时，我们如何收集、使用、披露和保护您的信息。</p>
+            <p>欢迎使用 SafeShare。本隐私政策说明了应用在使用服务时如何处理信息。SafeShare 采用隐私优先的设计原则：最少数据收集、零知识加密、无追踪。</p>
 
-            <h2>2. 我们收集的信息</h2>
-            <h3>2.1 您提供的信息</h3>
-            <ul>
-                <li><strong>账户信息：</strong>当您创建账户时，我们收集您的电子邮件地址和支付信息（针对Pro订阅者）</li>
-                <li><strong>用户内容：</strong>您通过SafeShare卡片加密和分享的内容</li>
-                <li><strong>偏好设置：</strong>语言、主题选择和应用设置</li>
-            </ul>
-
-            <h3>2.2 自动收集的信息</h3>
-            <ul>
-                <li><strong>使用数据：</strong>使用的功能、创建的卡片、应用性能指标</li>
-                <li><strong>设备信息：</strong>设备类型、操作系统、唯一设备标识符</li>
-                <li><strong>位置数据：</strong>基于IP地址的近似位置（仅用于安全目的）</li>
-            </ul>
-
-            <h2>3. 我们如何使用您的信息</h2>
-            <p>我们将收集的信息用于：</p>
-            <ul>
-                <li>提供和维护SafeShare服务</li>
-                <li>处理交易并发送相关信息</li>
-                <li>发送技术通知和支持消息</li>
-                <li>回应评论、问题和客户服务请求</li>
-                <li>监控和分析趋势、使用情况和活动</li>
-                <li>检测、预防和处理技术问题和欺诈活动</li>
-            </ul>
-
-            <h2>4. 数据存储和安全</h2>
+            <h2>2. 无需注册</h2>
             <div class="highlight">
-                <p><strong>零知识架构：</strong>SafeShare使用端到端加密。您的卡片内容在上传到我们的服务器之前会在您的设备上本地加密。我们无法访问、读取或解密您分享的内容。</p>
+                <p><strong>重要提示：</strong>SafeShare 不要求您创建账户、提供电子邮件地址或以任何方式注册。您可以立即开始使用应用，无需分享任何个人信息。</p>
+            </div>
+
+            <h2>3. 我们收集的信息</h2>
+            <h3>3.1 您提供的信息</h3>
+            <ul>
+                <li><strong>卡片内容：</strong>您通过 SafeShare 卡片加密和分享的内容（在上传前本地加密）</li>
+                <li><strong>应用偏好：</strong>您选择的语言和卡片主题（仅存储在您的设备上）</li>
+            </ul>
+
+            <h3>3.2 自动收集的信息</h3>
+            <ul>
+                <li><strong>卡片创建计数：</strong>创建的卡片数量（本地存储，用于免费版限制）</li>
+            </ul>
+
+            <div class="feature">
+                <p><strong>我们不收集：</strong></p>
+                <ul>
+                    <li>不收集电子邮件地址</li>
+                    <li>不收集电话号码</li>
+                    <li>不收集用户账户或身份信息</li>
+                    <li>不收集设备标识符或追踪信息</li>
+                    <li>不收集位置数据</li>
+                    <li>不收集使用分析或行为追踪</li>
+                </ul>
+            </div>
+
+            <h2>4. 我们如何使用信息</h2>
+            <p>收集的信息仅用于：</p>
+            <ul>
+                <li>提供 SafeShare 核心功能（创建和分享加密卡片）</li>
+                <li>执行免费版限制（每月创建的卡片数）</li>
+                <li>记住您的应用偏好（语言、主题）</li>
+            </ul>
+            <p><strong>我们不会将您的信息用于广告、分析或应用功能之外的任何其他目的。</strong></p>
+
+            <h2>5. 数据存储和安全</h2>
+            <div class="highlight">
+                <p><strong>零知识架构：</strong>您的卡片内容在上传到我们的服务器之前，使用 AES-256-GCM 在您的设备上本地加密。加密密钥从未发送到我们的服务器。我们无法访问、读取或解密您分享的内容。</p>
             </div>
             <p>额外的安全措施：</p>
             <ul>
-                <li>所有数据在传输过程中均使用TLS 1.3加密</li>
-                <li>卡片在被查看者查看后自动删除</li>
-                <li>我们仅保留服务运行所需的最少元数据</li>
-                <li>支付信息由第三方提供商（Apple/Google）处理，绝不存储在我们的服务器上</li>
+                <li>所有数据在传输过程中均使用 HTTPS/TLS 加密</li>
+                <li>卡片在被查看者查看一次后自动永久删除</li>
+                <li>过期卡片在过期时间后 24 小时内删除</li>
+                <li>我们仅保留卡片传递所需的最少元数据</li>
+                <li>我们的服务器上不存储个人信息</li>
             </ul>
 
-            <h2>5. 数据保留</h2>
+            <h2>6. 数据保留</h2>
             <ul>
-                <li><strong>有效卡片：</strong>保留至被查看者查看为止（自动删除）</li>
-                <li><strong>过期卡片：</strong>在过期后24小时内删除</li>
-                <li><strong>账户数据：</strong>在您的账户处于活动状态期间保留</li>
-                <li><strong>使用日志：</strong>匿名化并在90天后删除</li>
+                <li><strong>有效卡片：</strong>保留在服务器上直到被查看者查看（自动删除）</li>
+                <li><strong>过期卡片：</strong>在过期时间后 24 小时内删除</li>
+                <li><strong>本地偏好：</strong>存储在您的设备上，直到您更改或卸载应用</li>
+                <li><strong>卡片历史：</strong>仅存储在您的设备上</li>
             </ul>
 
-            <h2>6. 数据共享和披露</h2>
-            <p>我们不会出售您的个人数据。我们仅在以下情况下共享您的信息：</p>
+            <h2>7. 数据共享和披露</h2>
+            <p><strong>我们不会出售、出租或共享您的个人数据。</strong>我们没有可共享的个人数据。</p>
+            <p>我们仅在以下情况下共享非个人元数据：</p>
             <ul>
-                <li><strong>服务提供商：</strong>与协助我们运营服务的可信第三方</li>
+                <li><strong>服务提供商：</strong>与托管基础设施提供商（如 Cloudflare）仅用于运营服务</li>
                 <li><strong>法律要求：</strong>当法律、法院命令或政府法规要求时</li>
-                <li><strong>业务转让：</strong>在合并、出售或资产转让过程中</li>
-                <li><strong>保护：</strong>保护我们的权利、隐私、安全或财产</li>
             </ul>
 
-            <h2>7. 您的隐私权利</h2>
-            <p>根据您所在的地区，您可能拥有以下权利：</p>
+            <h2>8. 您的隐私权利</h2>
+            <p>由于 SafeShare 不收集个人信息且无需注册：</p>
             <ul>
-                <li><strong>访问：</strong>请求获取您的个人数据副本</li>
-                <li><strong>更正：</strong>请求更正不准确的数据</li>
-                <li><strong>删除：</strong>请求删除您的个人数据</li>
-                <li><strong>反对：</strong>反对处理您的个人数据</li>
-                <li><strong>限制：</strong>请求限制处理您的个人数据</li>
-                <li><strong>数据可携带：</strong>请求将您的数据传输到另一项服务</li>
+                <li><strong>无需删除账户：</strong>由于没有用户账户，无需从我们的服务器删除任何内容</li>
+                <li><strong>无需导出数据：</strong>您的数据已在您的设备上（应用偏好和卡片历史）</li>
+                <li><strong>本地控制：</strong>您可以随时通过应用设置清除本地数据</li>
             </ul>
-            <p>要行使这些权利，请联系我们：privacy@safeshare.app</p>
 
-            <h2>8. 儿童隐私</h2>
-            <p>SafeShare不适用于13岁以下的儿童。我们不会故意收集13岁以下儿童的个人信息。如果您是父母或监护人，并且认为您的孩子向我们提供了个人信息，请立即联系我们。</p>
+            <h2>9. 儿童隐私</h2>
+            <p>SafeShare 不适用于 13 岁以下的儿童。我们不会故意收集 13 岁以下儿童的个人信息。父母或监护人应监督未成年人使用本应用。</p>
 
-            <h2>9. 联系我们</h2>
+            <h2>10. 政策变更</h2>
+            <p>我们可能会不时更新本隐私政策。任何更改将在此页面上发布，并更新修订日期。更改后继续使用应用即表示接受更新后的政策。</p>
+
+            <h2>11. 联系我们</h2>
             <p>如果您对本隐私政策有疑问，请联系：</p>
             <ul>
                 <li>电子邮件：privacy@safeshare.app</li>
